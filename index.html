@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>BOOK</title>
+</head>
+
+<body class="w-full h-full bg-[#e8f1f0] font-sans">
+    <header class="w-full h-21 bg-white flex items-center justify-between px-8 ">
+        <div class="px-3 border border-[#e8f1f0] flex items-center w-max rounded-[8px]">
+            <img width="20" height="48" src="https://img.icons8.com/fluency-systems-regular/48/search--v1.png"
+                alt="search--v1" />
+            <input type="search" name="search" id="search" placeholder="Search by title..."
+                class="focus:outline-none focus:border-transparent px-2 py-2 border border-transparent rounded-[8px] focus:border-[#e8f1f0]" />
+        </div>
+        <button
+            class="text-white bg-[#004645] w-35 py-2 rounded-[10px] cursor-pointer hover:bg-green-900">Refresh</button>
+    </header>
+    <main class="">
+        <div class="px-12 pt-8 flex justify-between">
+            <p class="font-semibold text-2xl">All books</p>
+            <div class="space-x-6">
+                <button
+                    class="bg-white border border-[#dee8e7] w-27 py-1 rounded-[6px] cursor-pointer hover:bg-[#585c5c] hover:text-white">permanent</button>
+                <button
+                    class="bg-white border border-[#dee8e7] w-27 py-1 rounded-[6px] cursor-pointer hover:bg-[#585c5c] hover:text-white">temporary</button>
+            </div>
+        </div>
+        <div class="w-full h-max grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12 h-60 px-5 my-10 cursor-pointer 0"
+            id="displayBooks">
+        </div>
+    </main>
+    <script src="data.js"></script>
+</body>
+
+</html>
